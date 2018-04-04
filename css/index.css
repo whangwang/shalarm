@@ -123,12 +123,19 @@ body{
 }
 #scroll-content .section-1{
   background-image: url(../img/index-1.jpg);
+  background-size: cover;
 }
 #scroll-content .section-2{
-  background-image: url(../img/sample1.jpg);
+  background-image: url(../img/index-2.jpg);
+  background-size: cover;
 }
 #scroll-content .section-3{
-  background-image: url(../img/sample2.jpg);
+  background-image: url(../img/index-3.jpg);
+  background-size: cover;
+}
+#scroll-content .section-4{
+  background-image: url(../img/index-4.jpg);
+  background-size: cover;
 }
 #pp-nav span{
   border: none!important;
@@ -249,6 +256,16 @@ body{
     margin-bottom: 15px;
     padding-top: 15px;
     opacity: 1!important;
+    line-height: initial!important;
+  }
+  .header .header-icon img{
+    display: none;
+  }
+  .intro-panel img{
+    display: none;
+  }
+  .intro-panel br{
+    display: none;
   }
   .intro-panel p{
     font-size: 15px;
@@ -260,7 +277,10 @@ body{
   }
   .mobile-menu-btn{
     display: block;
-    background-color: black;
+    background-image: url(../img/menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% 50%;
     height: 60px;
     width: 60px;
     margin-top: 20px;
