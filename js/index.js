@@ -9,11 +9,4 @@ $(document).ready(function() {
 			$('.section-1').find('.intro-panel:not(.active)').addClass('active');
 		}
   });
-  $('body').on('click','.mobile-menu-btn',function(){
-    if($('.header').hasClass('active')){
-      $('.header').removeClass('active');
-    }else{
-      $('.header').addClass('active');
-    }
-  });
 });

@@ -1,0 +1,227 @@
+body{
+  overflow: auto;
+}
+
+.tab-selector{
+  position: absolute;
+  z-index: 50;
+}
+
+.tab-selector li{
+  width: 230px;
+  height: 37px;
+  background-color: #6DA3BC;
+  color: white;
+  line-height: 37px;
+  text-align: right;
+  padding-right: 20px;
+  user-select: none;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.tab-selector li:not(.active):hover{
+  background-color: #3D798E;
+}
+
+.tab-selector li.active{
+  background-color: #19306F;
+}
+
+.header{
+  margin-top: -100px!important;
+}
+
+.news-area{
+  width: calc( 100% - 330px );
+  margin-left: 290px;
+  margin-top: 15px;
+  text-align: center;
+  display: none;
+}
+
+.news-area.active{
+  display: block;
+}
+
+.news-area-container{
+  width: calc( 100% - 30px );
+  max-width: 800px;
+  margin: auto;
+  display: inline-block;
+}
+
+.news-block{
+  text-align: left;
+  position: relative;
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.news-block:first-of-type{
+  margin-top: 0px;
+}
+
+.news-block-img{
+  width: 300px;
+  float: left;
+  margin-right: 15px;
+}
+
+.news-block-date{
+  color: gray;
+  margin-top: 0px;
+}
+
+.news-block-title{
+  font-size: 21px;
+  color: #19306F;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.news-block-more{
+  width: 150px;
+  height: 50px;
+  border: none;
+  background-color: #6DA3BC;
+  color: white;
+  font-size: 21px;
+  font-weight: 400;
+  padding-right: 25px;
+  background-image: url(../img/down-arrow.svg);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position-x: 120px;
+  background-position-y: 19px;
+  position: absolute;
+  bottom: 0px;
+  cursor: pointer;
+}
+
+.intro-area{
+  width: calc( 100% + 80px );
+  margin-left: -40px;
+  position: relative;
+  display: inline-block;
+  display: none;
+  text-align: center;
+}
+
+.intro-area.active{
+  display: block;
+}
+
+.intro-area-company{
+  width: calc( 100% - 410px );
+  max-width: 1200px;
+  float: right;
+  margin-top: 15px;
+}
+
+.intro-area-company-banner{
+  width: 100%;
+}
+
+.intro-area-logo{
+  width: 300px;
+  margin-top: 30px;
+}
+
+.intro-area-company p{
+  padding-right: 40px;
+  margin-top: 30px;
+  color: #595757;
+}
+
+.intro-area-history{
+  width: calc( 100% - 160px );
+  max-width: 1200px;
+  float: left;
+  margin-top: 50px;
+}
+
+.intro-area-history img{
+  width: 100%;
+}
+
+.intro-area-product{
+  width: calc( 100% - 410px );
+  max-width: 1200px;
+  display: inline-block;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.intro-area-product img{
+  width: 100%;
+}
+
+.intro-area-award{
+  width: calc( 100% - 410px );
+  max-width: 1200px;
+  display: inline-block;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.intro-area-award img{
+  width: 100%;
+}
+
+.service-area{
+  width: calc( 100% + 80px );
+  margin-left: -40px;
+  position: relative;
+  display: none;
+  text-align: center;
+}
+
+.service-area.active{
+  display: inline-block;
+}
+
+.title-img{
+  width: 42.37%!important;
+}
+
+.intro-area-service-location{
+  text-align: left;
+}
+
+.contact-info{
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contact-info .header-row td{
+  background-color: #6DA3BC;
+  color: white;
+}
+
+.contact-info td{
+  line-height: 30px;
+  padding: 15px 0px 15px 0px;
+}
+
+.contact-info .header-row td:first-of-type{
+  background-color: white;
+}
+
+.contact-info tr:not(.header-row):nth-of-type(even) td{
+  background-color: #EFEFEF;
+}
+
+.contact-info th{
+  background-color: #19306F;
+  color: white;
+}
+
+.special-header th{
+  background-color: #314E9E!important;
+}
+
+.special-header td{
+  background-color: #C9CACA!important;
+}

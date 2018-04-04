@@ -1,0 +1,66 @@
+.contacus-title{
+  width: 25%;
+}
+
+.contactus-cotent{
+  padding: 50px 10% 50px 10%;
+}
+
+.contactus-form{
+  padding: 0px 5% 0px 5%;
+  margin-top: 30px;
+}
+
+.contactus-table{
+  width: 100%;
+}
+
+.contactus-table td{
+  padding: 5px 5px 5px 5px;
+  text-align: right;
+}
+
+.contactus-table .top{
+  vertical-align: top;
+}
+
+.contactus-table input{
+  width: calc(100% - 30px );
+  height: 30px;
+  border: none;
+  background-color: #C1DEE9;
+  padding: 0px 15px 0px 15px;
+}
+
+.contactus-table textarea{
+  width: calc(100% - 30px );
+  border: none;
+  background-color: #C1DEE9;
+  padding: 15px 15px 15px 15px;
+  height: 200px;
+  resize: none;
+  overflow: scroll;
+}
+
+.contactus-submit-btn{
+  width: 100px;
+  height: 37px;
+  border: none;
+  background-color: #19306F;
+  color: white;
+  float: right;
+  margin-right: 7px;
+}
+
+.addr-logo{
+  width: 100%;
+}
+
+.contact-info-table{
+  margin-top: 50px;
+}
+
+.map-api{
+  width: 100%;
+  margin-top: 30px;
+}

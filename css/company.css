@@ -1,0 +1,19 @@
+.page-company-title{
+  width: 80%;
+  margin-top: 50px;
+}
+
+.item-img-title{
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 70px;
+}
+
+.item-img-title img{
+  width: 30%;
+}
+
+.item-img-content{
+  width: 60%;
+  margin-top: 50px;
+}
