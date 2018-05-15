@@ -3,7 +3,7 @@
 }
 
 .contactus-cotent{
-  padding: 50px 10% 50px 10%;
+  padding: 80px 10% 50px 10%;
 }
 
 .contactus-form{
@@ -63,4 +63,29 @@
 .map-api{
   width: 100%;
   margin-top: 30px;
+}
+
+.mobile-contact-info{
+  display: none;
+}
+
+@media (max-width: 800px){
+  .contactus-cotent{
+    padding: 50px 15px 50px 15px;
+  }
+  .contactus-form{
+    padding: 0px;
+  }
+  .contacus-title{
+    width: 50%;
+  }
+  .contactus-table td{
+    width: auto!important;
+  }
+  .contact-info-table{
+    display: none;
+  }
+  .mobile-contact-info{
+    display: block;
+  }
 }

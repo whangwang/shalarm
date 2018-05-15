@@ -60,3 +60,13 @@
 .product-block ul{
   padding-left: 25px;
 }
+
+@media (max-width:800px){
+  .product-area{
+    margin-left: 0px;
+    width: 100%;
+  }
+  .product-block{
+    width: 100%;
+  }
+}

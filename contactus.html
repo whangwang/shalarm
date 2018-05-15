@@ -17,15 +17,39 @@
         <a href="index.html"><img src="img/logo.svg"></img></a>
       </div>
       <div class="right-element header-link">
-        <a href="news.html">公司情報</a>
-        <a href="product-list.html">產品介紹</a>
+        <a class="has-sub" data-target="news-list-item">公司情報</a>
+        <a class="has-sub" data-target="product-list-item">產品介紹</a>
         <a href="#">代理專區</a>
         <a href="contactus.html">聯絡我們</a>
         <div class="mobile-menu-btn"></div>
       </div>
+      <div class="product-list-item">
+        <div class="content">
+          <a href="product-list.html">產品類別</a>
+          <a href="product-list.html">產品類別</a>
+          <a href="product-list.html">產品類別</a>
+          <a href="product-list.html">產品類別</a>
+        </div>
+      </div>
+      <div class="news-list-item">
+        <div class="content">
+          <a href="news.html">最新消息</a>
+          <a href="intro.html">公司簡介</a>
+          <a href="service.html">公司服務</a>
+          <a href="company.html">企業安全系統</a>
+        </div>
+      </div>
       <div class="mobile-menu-content">
-        <a href="news.html">公司情報</a><br>
-        <a href="product-list.html">產品介紹</a><br>
+        <a class="mobile-has-sub" data-target="mobile-news-list-item">公司情報</a><br>
+        <a href="news.html" class="mobile-news-list-item">最新消息</a><br class="mobile-news-list-item">
+        <a href="intro.html" class="mobile-news-list-item">公司簡介</a><br class="mobile-news-list-item">
+        <a href="service.html" class="mobile-news-list-item">公司服務</a><br class="mobile-news-list-item">
+        <a href="company.html" class="mobile-news-list-item">企業安全系統</a><br class="mobile-news-list-item">
+        <a class="mobile-has-sub" data-target="mobile-product-list-item">產品介紹</a><br>
+        <a href="product-list.html" class="mobile-product-list-item">產品類別</a><br class="mobile-product-list-item">
+        <a href="product-list.html" class="mobile-product-list-item">產品類別</a><br class="mobile-product-list-item">
+        <a href="product-list.html" class="mobile-product-list-item">產品類別</a><br class="mobile-product-list-item">
+        <a href="product-list.html" class="mobile-product-list-item">產品類別</a><br class="mobile-product-list-item">
         <a href="#">代理專區</a><br>
         <a href="contactus.html">聯絡我們</a><br>
       </div>
@@ -66,6 +90,11 @@
             <td>服務專線：0800-099-110</td>
           </tr>
       </table>
+      <div class="mobile-contact-info">
+        <img class="addr-logo" style="width: 60%;margin-top: 50px;" src="img/logo-trans.svg" />
+        <p>116台北市文山區永安街48巷23號</p>
+        <p>服務專線：0800-099-110</p>
+      </div>
       <iframe class="map-api" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.42998564951!2d121.56750091518524!3d24.98550118399501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aa770b1cb891%3A0x7554291ffc199d44!2zMTE25Y-w5YyX5biC5paH5bGx5Y2A5rC45a6J6KGXNDjlt7cyM-iZnw!5e0!3m2!1szh-TW!2stw!4v1522822775349" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 
@@ -86,5 +115,25 @@
     </div>
   </body>
   <script>
+    $(document).ready(function(){
+      $('body').on('click','.has-sub',function(){
+        if($(this).hasClass('active')){
+          $('.'+$(this).data('target')).hide();
+          $(this).removeClass('active');
+        }else{
+          $('.'+$(this).data('target')).show();
+          $(this).addClass('active');
+        }
+      });
+      $('body').on('click','.mobile-has-sub',function(){
+        if($(this).hasClass('active')){
+          $('.'+$(this).data('target')).hide();
+          $(this).removeClass('active');
+        }else{
+          $('a.'+$(this).data('target')).css('display','block');
+          $(this).addClass('active');
+        }
+      });
+    });
   </script>
 </html>

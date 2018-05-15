@@ -17,15 +17,39 @@
         <a href="index.html"><img src="img/logo.svg"></img></a>
       </div>
       <div class="right-element header-link">
-        <a href="news.html">公司情報</a>
-        <a href="product-list.html">產品介紹</a>
+        <a class="has-sub" data-target="news-list-item">公司情報</a>
+        <a class="has-sub" data-target="product-list-item">產品介紹</a>
         <a href="#">代理專區</a>
         <a href="contactus.html">聯絡我們</a>
         <div class="mobile-menu-btn"></div>
       </div>
+      <div class="product-list-item">
+        <div class="content">
+          <a href="product-list.html">產品類別</a>
+          <a href="product-list.html">產品類別</a>
+          <a href="product-list.html">產品類別</a>
+          <a href="product-list.html">產品類別</a>
+        </div>
+      </div>
+      <div class="news-list-item">
+        <div class="content">
+          <a href="news.html">最新消息</a>
+          <a href="intro.html">公司簡介</a>
+          <a href="service.html">公司服務</a>
+          <a href="company.html">企業安全系統</a>
+        </div>
+      </div>
       <div class="mobile-menu-content">
-        <a href="news.html">公司情報</a><br>
-        <a href="product-list.html">產品介紹</a><br>
+        <a class="mobile-has-sub" data-target="mobile-news-list-item">公司情報</a><br>
+        <a href="news.html" class="mobile-news-list-item">最新消息</a><br class="mobile-news-list-item">
+        <a href="intro.html" class="mobile-news-list-item">公司簡介</a><br class="mobile-news-list-item">
+        <a href="service.html" class="mobile-news-list-item">公司服務</a><br class="mobile-news-list-item">
+        <a href="company.html" class="mobile-news-list-item">企業安全系統</a><br class="mobile-news-list-item">
+        <a class="mobile-has-sub" data-target="mobile-product-list-item">產品介紹</a><br>
+        <a href="product-list.html" class="mobile-product-list-item">產品類別</a><br class="mobile-product-list-item">
+        <a href="product-list.html" class="mobile-product-list-item">產品類別</a><br class="mobile-product-list-item">
+        <a href="product-list.html" class="mobile-product-list-item">產品類別</a><br class="mobile-product-list-item">
+        <a href="product-list.html" class="mobile-product-list-item">產品類別</a><br class="mobile-product-list-item">
         <a href="#">代理專區</a><br>
         <a href="contactus.html">聯絡我們</a><br>
       </div>
@@ -96,6 +120,26 @@
       </div>
     </div>
     <script>
+      $(document).ready(function(){
+        $('body').on('click','.has-sub',function(){
+          if($(this).hasClass('active')){
+            $('.'+$(this).data('target')).hide();
+            $(this).removeClass('active');
+          }else{
+            $('.'+$(this).data('target')).show();
+            $(this).addClass('active');
+          }
+        });
+        $('body').on('click','.mobile-has-sub',function(){
+          if($(this).hasClass('active')){
+            $('.'+$(this).data('target')).hide();
+            $(this).removeClass('active');
+          }else{
+            $('a.'+$(this).data('target')).css('display','block');
+            $(this).addClass('active');
+          }
+        });
+      });
     </script>
   </body>
 </html>

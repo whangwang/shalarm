@@ -28,6 +28,10 @@ body{
   background-color: #19306F;
 }
 
+.tab-selector a{
+  text-decoration: none;
+}
+
 .header{
   margin-top: -100px!important;
 }
@@ -224,4 +228,68 @@ body{
 
 .special-header td{
   background-color: #C9CACA!important;
+}
+
+
+@media (max-width:800px){
+  .web-content{
+    padding: 40px 15px 50px 15px;
+  }
+  .tab-selector{
+    display: none;
+  }
+  .news-area{
+    margin-left: 0px;
+    width: 100%;
+  }
+  .intro-area{
+    margin-left: 0px;
+    width: 100%;
+  }
+  .service-area{
+    margin-left: 0px;
+    width: 100%;
+  }
+  .news-area-container{
+    width: 100%;
+  }
+  .news-block-img{
+    width: 100%;
+  }
+  .news-block-date{
+    line-height: 40px;
+  }
+  .news-block-title{
+    margin-top: -20px;
+  }
+  .news-block-more{
+    position: relative;
+    width: 100%;
+    background-position: 80% center;
+  }
+  .intro-area-company{
+    width: calc( 100% + 30px );
+    margin-left: -15px;
+    float: unset;
+  }
+  .intro-area-history{
+    width: calc( 100% + 30px );
+    margin-left: -15px;
+    float: unset;
+  }
+  .intro-area-product{
+    width: 100%;
+    float: unset;
+  }
+  .intro-area-award{
+    width: 100%;
+    float: unset;
+  }
+  .contact-info-container{
+    width: 100%;
+    overflow: scroll;
+  }
+  .contact-info-container table{
+    width: 800px;
+  }
 }

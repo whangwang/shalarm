@@ -7,7 +7,6 @@
     <script src="js/header.js"></script>
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/news.css" />
-    <link rel="stylesheet" href="css/company.css" />
     <title></title>
   </head>
   <body>
@@ -55,39 +54,93 @@
       </div>
     </div>
     <!-- Content -->
-    <div class="web-content" style="text-align: center;">
-      <div class="path-navigator" style="text-align: left;">
+    <div class="web-content">
+      <div class="path-navigator">
         <a href="index.html">首頁</a>/
-        <a href="#">企業安全系統</a>
+        <a href="news.html">公司情報</a>/
+        <a href="#">公司服務</a>
       </div>
-      <img class="page-company-title" src="img/company-title.svg" />
-      <div class="item-img-title">
-        <img src="img/benefit.svg" />
-        <p>
-          有線/無線(GSM)雙線路，通報警方無障礙。<br>
-          同時提供使用者即時測試簡訊服務，資訊客戶服務中心無法怠職。<br>
-          直通轄區警務中心，無需過慮及篩選。
-        </p>
+      <div class="tab-selector">
+        <ul>
+          <a href="news.html"><li data-target="news-area">最新消息</li></a>
+          <a href="intro.html"><li data-target="intro-area">公司簡介</li></a>
+          <a href="service.html"><li class="active" data-target="service-area">公司服務</li></a>
+          <a href="company.html"><li data-target="company">企業安全系統</li></a>
+        </ul>
       </div>
-      <img class="item-img-content" src="img/sample1.jpg" />
-      <div class="item-img-title">
-        <img src="img/monitor.svg" />
-        <p>
-          我們提供監視系統租賃服務，提供長租、短期彈性方案來滿足各種需求，代<br>理各大品牌，透過行動裝置APP軟體監看。
-        </p>
+      <div class="tab-content">
+        <div class="service-area active">
+          <!-- 公司介紹 -->
+          <div class="intro-area-company">
+            <img class="intro-area-company-banner" src="img/1-3.png" />
+          </div>
+          <div class="intro-area-product">
+            <img src="img/service-item.png" />
+          </div>
+          <div class="intro-area-service-location intro-area-product">
+            <img class="title-img" src="img/service-location.png" />
+            <div class="contact-info-container">
+              <table class="contact-info">
+                <tr class="header-row">
+                  <td></td>
+                  <td>單位</td>
+                  <td>服務電話</td>
+                  <td>緊急聯絡電話</td>
+                </tr>
+                <tr>
+                  <th>三都主要營業單位</th>
+                  <td>總公司<br>北區分公司<br>中區分公司<br>南區分公司</td>
+                  <td>(02)2792-3447<br>(02)2762-9825<br>(04)2473-3167<br>(07)753-2815</td>
+                  <td>0910-276-988<br>0918-628-253<br>0918-983-705<br>0918-985-735</td>
+                </tr>
+                <tr>
+                  <th>北區各營業單位</th>
+                  <td>新北市營業所<br>北基營業所<br>桃園營業所<br>新竹營業所</td>
+                  <td>(02)990-8121<br>(02)2693-5631<br>(03)357-8115<br>(03)530-4238</td>
+                  <td>0963-786-218<br>0938-117-797<br>0975-668-881<br>0936-054-707</td>
+                </tr>
+                <tr>
+                  <th>中部各營業單位</th>
+                  <td>苗栗營業所<br>南投營業所<br>彰化營業所<br>雲林營業所</td>
+                  <td>(037)592-014<br>(049)231-3638<br>(04)712-7127<br>(04)712-7127</td>
+                  <td>0936-054-707<br>0963-153-676<br>0912-629-876<br>0918-985-973</td>
+                </tr>
+                <tr>
+                  <th>南部各營業單位</th>
+                  <td>嘉義營業所<br>台南一區營業所<br>屏東縣營業所</td>
+                  <td>(05)286-5472<br>(06)659-1121<br>(08)753-2871</td>
+                  <td>0932-859-343<br>0915-218-627<br>0932-808-551</td>
+                </tr>
+                <tr>
+                  <th>東部及外島各營業單位</th>
+                  <td>東部營業處<br>台東營業處<br>金、馬、澎湖</td>
+                  <td>(03)956-1428<br>(089)238-520<br>(02)2762-9825</td>
+                  <td>0918-598-409<br>0918-985-735<br>0910-276-988</td>
+                </tr>
+                <tr class="special-header">
+                  <th>北京與深圳辦事處</th>
+                  <td>北京辦事處<br>深圳辦事處</td>
+                  <td>18612303907<br>0755-83292053</td>
+                  <td>QQ:2811970962<br>QQ:1545808725</td>
+                  <td>郵政編碼：101129<br>郵政編碼：518035</td>
+                </tr>
+
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
-      <img class="item-img-content" src="img/sample1.jpg" />
-      <div class="item-img-title">
-        <img src="img/infocenter.svg" />
-        <p>
-          服務項目：<br>
-          諮詢服務，異狀排除<br>
-          防搶系統檢測<font class="blue-text">(線路異常、緊急通報)<font><br>
-          監視系統檢測<font class="blue-text">(硬碟故障、影像中斷)<font><br>
-          門禁系統檢測<font class="blue-text">(設備異常、緊急通知聯絡人)<font><br>
-        </p>
-      </div>
-      <img class="item-img-content" src="img/sample1.jpg" />
+    </div>
+
+    <!-- page -->
+    <div class="page-selector">
+      <img src="img/left-arrow.svg" />
+      <a href="#">1</a>/
+      <a href="#">2</a>/
+      <a href="#">3</a>/
+      <a href="#">4</a>/
+      <a href="#">5</a>
+      <img src="img/right-arrow.svg" />
     </div>
 
     <!-- footer -->
