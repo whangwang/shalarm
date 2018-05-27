@@ -347,7 +347,7 @@ body{
     padding: 0px 15px 0px 15px;
   }
   .intro-panel h3{
-    font-size: 30px;
+    font-size: 30px!important;
     margin-bottom: 15px;
     padding-top: 15px;
     opacity: 1!important;
