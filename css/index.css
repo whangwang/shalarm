@@ -117,13 +117,15 @@ body{
 }
 
 .product-list-item{
-  background-color: #19306F;
-  width: calc( 100% - 40px );
+  background-color: #51608a;
+  width: auto;
   margin-left: -15px;
   position: absolute;
   margin-top: 130px;
   padding: 20px;
   display: none;
+  position: absolute;
+  right: 275px;
 }
 
 .product-list-item .content{
@@ -138,7 +140,8 @@ body{
   padding: 0px 10px 0px 10px;
   color: rgba(255,255,255,0.5);
   cursor: pointer;
-  line-height: 18px;
+  height: 37px;
+  line-height: 37px;
   margin-right: 30px;
   font-size: 18px;
 }
@@ -299,13 +302,14 @@ body{
   display: none;
 }
 .news-list-item{
-  background-color: #19306F;
-  width: calc( 100% - 40px );
+  background-color: #51608a;
+  width: auto;
   margin-left: -15px;
   position: absolute;
   margin-top: 130px;
   padding: 20px;
   display: none;
+  right: 395px;
 }
 
 .news-list-item .content{
@@ -320,9 +324,15 @@ body{
   padding: 0px 10px 0px 10px;
   color: rgba(255,255,255,0.5);
   cursor: pointer;
-  line-height: 18px;
   margin-right: 30px;
   font-size: 18px;
+  height: 37px;
+  line-height: 37px;
+}
+
+.news-list-item br{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .news-list-item a:hover{
