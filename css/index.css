@@ -119,7 +119,7 @@ body{
 }
 
 .product-list-item{
-  background-color: #51608a;
+  background-color: rgba(81, 96, 138, 0.9);
   width: auto;
   margin-left: -15px;
   position: absolute;
@@ -304,7 +304,7 @@ body{
   display: none;
 }
 .news-list-item{
-  background-color: #51608a;
+  background-color: rgba(81, 96, 138, 0.9);
   width: auto;
   margin-left: -15px;
   position: absolute;
