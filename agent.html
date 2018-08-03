@@ -65,14 +65,29 @@
   </body>
   <script>
     $(document).ready(function(){
-      $('body').on('click','.has-sub',function(){
-        if($(this).hasClass('active')){
+      $('body').on('mouseover','.has-sub',function(){
+        $('.'+$(this).data('target')).show();
+        $(this).addClass('active');
+      });
+      $('body').on('mouseleave','.has-sub',function(){
           $('.'+$(this).data('target')).hide();
           $(this).removeClass('active');
-        }else{
-          $('.'+$(this).data('target')).show();
-          $(this).addClass('active');
-        }
+      });
+      $('body').on('mouseover','.news-list-item',function(){
+        $('.news-list-item').show();
+        $('.has-sub[data-target=news-list-item]').addClass('active');
+      });
+      $('body').on('mouseleave','.news-list-item',function(){
+        $('.news-list-item').hide();
+        $('.has-sub[data-target=news-list-item]').removeClass('active');
+      });
+      $('body').on('mouseover','.product-list-item',function(){
+        $('.product-list-item').show();
+        $('.has-sub[data-target=product-list-item]').addClass('active');
+      });
+      $('body').on('mouseleave','.product-list-item',function(){
+        $('.product-list-item').hide();
+        $('.has-sub[data-target=product-list-item]').removeClass('active');
       });
       $('body').on('click','.mobile-has-sub',function(){
         if($(this).hasClass('active')){

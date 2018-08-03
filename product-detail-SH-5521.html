@@ -108,10 +108,6 @@
     <!-- footer -->
     <div class="footer">
       <div class="left-element">
-        <a href="#">公司情報</a>
-        <a href="#">產品介紹</a>
-        <a href="#">代理專區</a>
-        <a href="#">聯絡我們</a>
         <a href="#">顧客服務</a>
         <a href="#">隱私宣告</a>
         <a href="#">社會責任</a>
@@ -126,14 +122,29 @@
     </div>
     <script>
       $(document).ready(function(){
-        $('body').on('click','.has-sub',function(){
-          if($(this).hasClass('active')){
+        $('body').on('mouseover','.has-sub',function(){
+          $('.'+$(this).data('target')).show();
+          $(this).addClass('active');
+        });
+        $('body').on('mouseleave','.has-sub',function(){
             $('.'+$(this).data('target')).hide();
             $(this).removeClass('active');
-          }else{
-            $('.'+$(this).data('target')).show();
-            $(this).addClass('active');
-          }
+        });
+        $('body').on('mouseover','.news-list-item',function(){
+          $('.news-list-item').show();
+          $('.has-sub[data-target=news-list-item]').addClass('active');
+        });
+        $('body').on('mouseleave','.news-list-item',function(){
+          $('.news-list-item').hide();
+          $('.has-sub[data-target=news-list-item]').removeClass('active');
+        });
+        $('body').on('mouseover','.product-list-item',function(){
+          $('.product-list-item').show();
+          $('.has-sub[data-target=product-list-item]').addClass('active');
+        });
+        $('body').on('mouseleave','.product-list-item',function(){
+          $('.product-list-item').hide();
+          $('.has-sub[data-target=product-list-item]').removeClass('active');
         });
         $('body').on('click','.mobile-has-sub',function(){
           if($(this).hasClass('active')){
