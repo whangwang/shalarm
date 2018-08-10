@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/header.js"></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/news.css" />
+    <title></title>
+  </head>
+  <body>
+    <!-- Header Area -->
+    <div class="header">
+      <div class="left-element header-icon">
+        <a href="index.html"><img src="img/logo.svg"></img></a>
+      </div>
+      <div class="right-element header-link">
+        <a class="has-sub" data-target="news-list-item">公司情報</a>
+        <a class="has-sub" data-target="product-list-item">產品介紹</a>
+        <a href="agent.html">代理專區</a>
+        <a href="contactus.html">聯絡我們</a>
+        <div class="mobile-menu-btn"></div>
+      </div>
+      <div class="product-list-item">
+        <div class="content">
+          <a href="product-list-1.html">報警產品</a><br>
+          <a href="product-list-2.html">防盜產品</a><br>
+          <a href="product-list-3.html">門禁產品</a><br>
+          <a href="product-list-4.html">監控產品</a>
+        </div>
+      </div>
+      <div class="news-list-item">
+        <div class="content">
+          <a href="news.html">最新消息</a><br>
+          <a href="intro.html">公司簡介</a><br>
+          <a href="service.html">公司服務</a><br>
+          <a href="company.html">企業安全系統</a>
+        </div>
+      </div>
+      <div class="mobile-menu-content">
+        <a class="mobile-has-sub" data-target="mobile-news-list-item">公司情報</a><br>
+        <a href="news.html" class="mobile-news-list-item">最新消息</a><br class="mobile-news-list-item">
+        <a href="intro.html" class="mobile-news-list-item">公司簡介</a><br class="mobile-news-list-item">
+        <a href="service.html" class="mobile-news-list-item">公司服務</a><br class="mobile-news-list-item">
+        <a href="company.html" class="mobile-news-list-item">企業安全系統</a><br class="mobile-news-list-item">
+        <a class="mobile-has-sub" data-target="mobile-product-list-item">產品介紹</a><br>
+        <a href="product-list-1.html" class="mobile-product-list-item">報警產品</a><br class="mobile-product-list-item">
+        <a href="product-list-2.html" class="mobile-product-list-item">防盜產品</a><br class="mobile-product-list-item">
+        <a href="product-list-3.html" class="mobile-product-list-item">門禁產品</a><br class="mobile-product-list-item">
+        <a href="product-list-4.html" class="mobile-product-list-item">監控產品</a><br class="mobile-product-list-item">
+        <a href="#">代理專區</a><br>
+        <a href="contactus.html">聯絡我們</a><br>
+      </div>
+    </div>
+    <!-- Content -->
+    <div class="web-content">
+      <div class="path-navigator" style="display: none;">
+        <a href="index.html">首頁</a>/
+        <a href="news.html">公司情報</a>/
+        <a href="intro.html">公司簡介</a>
+      </div>
+      <div class="tab-selector">
+        <ul>
+          <a href="customer.html"><li class="active" data-target="news-area">顧客服務</li></a>
+          <a href="privacy.html"><li data-target="intro-area">隱私宣告</li></a>
+          <a href="responsibility.html"><li data-target="service-area">社會責任</li></a>
+        </ul>
+      </div>
+      <div class="tab-content">
+        <div class="intro-area active">
+          <!-- 公司介紹 -->
+          <div class="center-area-company">
+            <img class="center-area-company-banner" src="img/company-intro.png" />
+            <!--
+            <img class="intro-area-logo" src="img/logo-trans.svg" />
+            <p>本公司為全國金融機構防範犯罪的專業安全系統規劃整合公司。於全國二十一處設有分公司，營業處所與服務處等。服務維修網遍及台、彭、金、馬。</p>
+            <p>自主開發的電腦報警系統三十餘年來，已在全國各警(分)局端電腦報案平台完成有線、GSM無線、影像與E化報案系統連線。使用戶包含各公、民營銀行、郵局、信合社、農漁會、公民營加油站、銀樓、司法人員、政府首長、民意代表、超商連鎖業、公司行號等。在治安方面作出重大貢獻。</p>
+            <p>樹樺電子除了擁有全國金融機構專業電腦報警系統之外，亦同時整合了防盜/監視/門禁等系統，讓客戶在安全防範方面提供了更完整、更專業的規劃與保障。</p>
+          -->
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- page -->
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="left-element">
+        <a href="#">顧客服務</a>
+        <a href="#">隱私宣告</a>
+        <a href="#">社會責任</a>
+        <a href="#">網站導覽</a>
+      </div>
+      <div class="right-element">
+        <p>樹樺電子股份有限公司2017版權所有Ⓒ未經同意請勿轉載本站內容</p>
+        <a href="#"><img src="img/fb-btn.svg"></img></a>
+        <a href="#"><img src="img/twitter-btn.svg"></img></a>
+        <a href="#"><img src="img/tumblr-btn.svg"></img></a>
+      </div>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function(){
+      $('body').on('mouseover','.has-sub',function(){
+        $('.'+$(this).data('target')).show();
+        $(this).addClass('active');
+      });
+      $('body').on('mouseleave','.has-sub',function(){
+          $('.'+$(this).data('target')).hide();
+          $(this).removeClass('active');
+      });
+      $('body').on('mouseover','.news-list-item',function(){
+        $('.news-list-item').show();
+        $('.has-sub[data-target=news-list-item]').addClass('active');
+      });
+      $('body').on('mouseleave','.news-list-item',function(){
+        $('.news-list-item').hide();
+        $('.has-sub[data-target=news-list-item]').removeClass('active');
+      });
+      $('body').on('mouseover','.product-list-item',function(){
+        $('.product-list-item').show();
+        $('.has-sub[data-target=product-list-item]').addClass('active');
+      });
+      $('body').on('mouseleave','.product-list-item',function(){
+        $('.product-list-item').hide();
+        $('.has-sub[data-target=product-list-item]').removeClass('active');
+      });
+      $('body').on('click','.mobile-has-sub',function(){
+        if($(this).hasClass('active')){
+          $('.'+$(this).data('target')).hide();
+          $(this).removeClass('active');
+        }else{
+          $('a.'+$(this).data('target')).css('display','block');
+          $(this).addClass('active');
+        }
+      });
+    });
+  </script>
+</html>

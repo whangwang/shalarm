@@ -230,6 +230,20 @@ body{
   background-color: #C9CACA!important;
 }
 
+.center-area-company{
+  width: calc( 100% - 330px );
+  float: right;
+  margin-top: 15px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.center-area-company-banner{
+  width: calc( 100% - 80px );
+  max-width: 1200px;
+  margin: auto;
+}
+
 
 @media (max-width:800px){
   .web-content{
@@ -271,6 +285,15 @@ body{
     width: calc( 100% + 30px );
     margin-left: -15px;
     float: unset;
+  }
+  .center-area-company{
+    width: calc( 100% + 30px );
+    margin-left: -15px;
+    float: unset;
+  }
+  .center-area-company-banner{
+    width: 100%;
+    margin: auto;
   }
   .intro-area-history{
     width: calc( 100% + 30px );
