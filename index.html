@@ -21,8 +21,7 @@
         <a class="has-sub" data-target="product-list-item">產品介紹</a>
         <a href="agent.html">代理專區</a>
         <a href="contactus.html">聯絡我們</a>
-        <div class="mobile-menu-btn"></div>
-        <button class="test-btn mobile-menu-btn">測試按鈕</button>
+        <button class="mobile-menu-btn" style="background-color: transparent;border: none;"></button>
       </div>
       <div class="product-list-item">
         <div class="content">
@@ -51,7 +50,7 @@
         <a href="product-list-2.html" class="mobile-product-list-item">防盜產品</a><br class="mobile-product-list-item">
         <a href="product-list-3.html" class="mobile-product-list-item">門禁產品</a><br class="mobile-product-list-item">
         <a href="product-list-4.html" class="mobile-product-list-item">監控產品</a><br class="mobile-product-list-item">
-        <a href="#">代理專區</a><br>
+        <a href="agent.html">代理專區</a><br>
         <a href="contactus.html">聯絡我們</a><br>
       </div>
     </div>
@@ -113,6 +112,15 @@
       });
       $('body').on('click','.test-btn',function(){
         alert('測試！');
+      });
+      $('body').on('click','.touchstart',function(){
+        if($(this).hasClass('active')){
+          $('.'+$(this).data('target')).hide();
+          $(this).removeClass('active');
+        }else{
+          $('a.'+$(this).data('target')).css('display','block');
+          $(this).addClass('active');
+        }
       });
       $('body').on('click','.mobile-has-sub',function(){
         if($(this).hasClass('active')){
