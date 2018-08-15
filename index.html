@@ -22,6 +22,7 @@
         <a href="agent.html">代理專區</a>
         <a href="contactus.html">聯絡我們</a>
         <div class="mobile-menu-btn"></div>
+        <button class="test-btn mobile-menu-btn">測試按鈕</button>
       </div>
       <div class="product-list-item">
         <div class="content">
@@ -109,6 +110,9 @@
       $('body').on('mouseleave','.product-list-item',function(){
         $('.product-list-item').hide();
         $('.has-sub[data-target=product-list-item]').removeClass('active');
+      });
+      $('body').on('click','.test-btn',function(){
+        alert('測試！');
       });
       $('body').on('click','.mobile-has-sub',function(){
         if($(this).hasClass('active')){
